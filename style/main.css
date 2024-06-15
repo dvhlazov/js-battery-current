@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding-top: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+.battery {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    border: 2px solid #000;
+    background-color: rgb(237, 247, 255);
+}
+.connectors {
+    display: flex;
+    justify-content: center;
+    gap: 220px;
+}
+.connector {
+    width: 35px;
+    height: 38px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    margin-top: -115px;
+    background-color: rgb(212, 212, 212);
+    z-index: 100;
+}
+.minus_container {
+    display: flex;
+    justify-content: center;
+    gap: 200px ;
+ 
+}
+.minus {
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    margin-top: -25px;
+}
+.plus {
+    bottom: 50px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.plus::before, .plus::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+}
+
+.plus::before {
+    width: 50px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.plus::after {
+    width: 2px;
+    height: 50px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main_display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: absolute;
+    width: 150px;
+    height: 70px;
+    border: 1px solid #000;
+    left: 130px;
+    top: 110px ;
+    background-color: #f5fcac;
+}
+
+.scheme_container {
+    width: 500px;
+    height: 400px;
+    border: 3px solid #000;
+    position: absolute;
+    top: 50px;
+    z-index: 99;
+    
+}
+.scheme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 375px;
+    left: 200px;
+    z-index: 100;
+    background-color: aquamarine;
+
+}
+#om_display {
+    font-size: 21px;
+}
+.om {
+    padding-left: 5px;
+}
+.container2 {
+    position: relative;
+    margin-top: 180px;
+    width: 100%;
+    
+}
+.buttons_container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(231, 236, 228);
+}
+button:hover {
+    background-color: rgb(237, 247, 255);
+}
+button span {
+    font-size: 20px;
+}
+#main_display_info {
+    font-size: 21px;
+    font-weight: 600;
+}
+h2 {
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 185px;
+    bottom: 137px;
+}
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
